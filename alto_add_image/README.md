@@ -18,5 +18,12 @@ in the various XML). The current code assumes this and so adds underscores as ap
 (ALTO, image etc.). We could guess this from the ID format, but this is not robust to any future changes in Transkribus output.
 Instead, the `fileGrp`s have to be searched for the `file` `@ID`s and the `fileGrp` `@ID` used to determine the type.
 
+The code should be relatively robust, but a few improvements are still needed:
+
+* If the METS is present but the relevant filename can't be found, then should give the fallback case of the XML filename.
+* A parameter could allow the user to choose behaviour if the METS can't be found (use XML filename or do nothing).
+* Could check for existing image filename and give a warning if present.
+* ...
+
 
 Peter A. Stokes, EPHE, 2022
