@@ -20,10 +20,9 @@ Instead, the `fileGrp`s have to be searched for the `file` `@ID`s and the `fileG
 
 The code should be relatively robust, but a few improvements are still needed:
 
-* If the METS is present but the relevant filename can't be found, then should give the fallback case of the XML filename.
 * A parameter could allow the user to choose behaviour if the METS can't be found (use XML filename or do nothing).
-* Could check for existing image filename and give a warning if present.
+* Could check for existing `sourceImageInformation` and give a warning if present.
 * ...
 
 
-Peter A. Stokes, EPHE, 2022
+Peter A. Stokes, AOROC EPHE-PSL, 2022
